@@ -1,0 +1,201 @@
+QuestaSim-64 qrun 2024.1 Utility 2024.02 Feb  1 2024
+Start time: 09:54:39 on Feb 04,2025
+qrun top_axi_m.sv 
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+Start time: 09:54:41 on Feb 04,2025
+vlog top_axi_m.sv -work ./work -statslog qrun.out/stats_log -writesessionid "+qrun.out/top_dus" -csession=incr -csessionid=0 
+** Note: (vlog-2286) top_axi_m.sv(1): Using implicit +incdir+C:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_axi_m_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface axi_interface
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 09:54:44 on Feb 04,2025, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0
+-- Skipping vopt
+# vsim -lib ./work -c -do "run -all; quit -f" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log -csession=incr -csessionid=2 
+# Start time: 09:54:47 on Feb 04,2025
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.axi_interface(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_axi_m_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading C:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO axi_m_driver.sv(19) @ 0: uvm_test_top.env.agent.drv [] master driver got the interface signals
+# UVM_INFO axi_m_sequencer.sv(11) @ 0: uvm_test_top.env.agent.sqr [] this is build_phase of sequencer
+# UVM_INFO axi_s_sequencer.sv(11) @ 0: uvm_test_top.env.s_agnt.s_sqr [] this is build_phase of slave_sequencer
+# connection done
+# connection done in slave agent
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               base_test               -     @467 
+#   env                      axi_m_env               -     @478 
+#     agent                  axi_m_agent             -     @493 
+#       drv                  axi_m_driver            -     @508 
+#         rsp_port           uvm_analysis_port       -     @523 
+#         seq_item_port      uvm_seq_item_pull_port  -     @515 
+#       mon                  axi_m_monitor           -     @531 
+#         mon_ap             uvm_analysis_port       -     @648 
+#       sqr                  axi_m_sequencer         -     @538 
+#         rsp_export         uvm_analysis_export     -     @545 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @639 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     s_agnt                 axi_s_agent             -     @500 
+#       s_drv                axi4lite_slave_mem      -     @663 
+#       s_sqr                axi_s_sequencer         -     @670 
+#         rsp_export         uvm_analysis_export     -     @677 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @771 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO axi_m_driver.sv(29) @ 0: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] resetting signals of master 
+# UVM_INFO axi_m_driver.sv(33) @ 0: uvm_test_top.env.agent.drv [axi_m_driver] resetn reached
+# entered loop
+# entered loop
+# UVM_INFO axi_m_driver.sv(33) @ 5: uvm_test_top.env.agent.drv [axi_m_driver] resetn reached
+# UVM_INFO axi_m_driver.sv(33) @ 15: uvm_test_top.env.agent.drv [axi_m_driver] resetn reached
+# UVM_INFO axi_m_driver.sv(33) @ 25: uvm_test_top.env.agent.drv [axi_m_driver] resetn reached
+# UVM_INFO axi_m_driver.sv(54) @ 35: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(118) @ 35: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write adress channel is 8
+# UVM_INFO axi_m_driver.sv(177) @ 65: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write data channel
+# UVM_INFO axi_m_driver.sv(185) @ 65: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  0
+# UVM_INFO axi_m_monitor.sv(109) @ 65: uvm_test_top.env.agent.mon [] ----------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(110) @ 65: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Write captured: Addr = 8, Data = abd5
+# UVM_INFO axi_m_driver.sv(185) @ 75: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  1
+# UVM_INFO axi_m_driver.sv(194) @ 85: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] data sent from master is : abd5
+# UVM_INFO axi_m_driver.sv(206) @ 95: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write response channel 
+# UVM_INFO axi_m_driver.sv(58) @ 115: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 115: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(149) @ 125: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] In master read adress channel
+# UVM_INFO axi_m_monitor.sv(129) @ 155: uvm_test_top.env.agent.mon [] -------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(130) @ 155: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Read captured: Addr = 8, Data = abd5 (Match)
+# UVM_INFO axi_m_driver.sv(58) @ 165: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 165: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# exited loop
+# entered loop
+# UVM_INFO axi_m_driver.sv(118) @ 165: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write adress channel is 10
+# UVM_INFO axi_m_driver.sv(177) @ 195: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write data channel
+# UVM_INFO axi_m_driver.sv(185) @ 195: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  0
+# UVM_INFO axi_m_monitor.sv(109) @ 195: uvm_test_top.env.agent.mon [] ----------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(110) @ 195: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Write captured: Addr = 10, Data = abdd
+# UVM_INFO axi_m_driver.sv(185) @ 205: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  1
+# UVM_INFO axi_m_driver.sv(194) @ 215: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] data sent from master is : abdd
+# UVM_INFO axi_m_driver.sv(206) @ 225: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write response channel 
+# UVM_INFO axi_m_driver.sv(58) @ 245: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 245: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(149) @ 255: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] In master read adress channel
+# UVM_INFO axi_m_monitor.sv(129) @ 285: uvm_test_top.env.agent.mon [] -------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(130) @ 285: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Read captured: Addr = 10, Data = abdd (Match)
+# UVM_INFO axi_m_driver.sv(58) @ 295: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 295: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# exited loop
+# entered loop
+# UVM_INFO axi_m_driver.sv(118) @ 295: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write adress channel is 18
+# UVM_INFO axi_m_driver.sv(177) @ 325: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write data channel
+# UVM_INFO axi_m_driver.sv(185) @ 325: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  0
+# UVM_INFO axi_m_monitor.sv(109) @ 325: uvm_test_top.env.agent.mon [] ----------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(110) @ 325: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Write captured: Addr = 18, Data = abe5
+# UVM_INFO axi_m_driver.sv(185) @ 335: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  1
+# UVM_INFO axi_m_driver.sv(194) @ 345: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] data sent from master is : abe5
+# UVM_INFO axi_m_driver.sv(206) @ 355: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write response channel 
+# UVM_INFO axi_m_driver.sv(58) @ 375: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 375: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(149) @ 385: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] In master read adress channel
+# UVM_INFO axi_m_monitor.sv(129) @ 415: uvm_test_top.env.agent.mon [] -------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(130) @ 415: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Read captured: Addr = 18, Data = abe5 (Match)
+# UVM_INFO axi_m_driver.sv(58) @ 425: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 425: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# exited loop
+# entered loop
+# UVM_INFO axi_m_driver.sv(118) @ 425: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write adress channel is 20
+# UVM_INFO axi_m_driver.sv(177) @ 455: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write data channel
+# UVM_INFO axi_m_driver.sv(185) @ 455: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  0
+# UVM_INFO axi_m_monitor.sv(109) @ 455: uvm_test_top.env.agent.mon [] ----------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(110) @ 455: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Write captured: Addr = 20, Data = abed
+# UVM_INFO axi_m_driver.sv(185) @ 465: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  1
+# UVM_INFO axi_m_driver.sv(194) @ 475: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] data sent from master is : abed
+# UVM_INFO axi_m_driver.sv(206) @ 485: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write response channel 
+# UVM_INFO axi_m_driver.sv(58) @ 505: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 505: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(149) @ 515: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] In master read adress channel
+# UVM_INFO axi_m_monitor.sv(129) @ 545: uvm_test_top.env.agent.mon [] -------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(130) @ 545: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Read captured: Addr = 20, Data = abed (Match)
+# UVM_INFO axi_m_driver.sv(58) @ 555: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 555: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# exited loop
+# entered loop
+# UVM_INFO axi_m_driver.sv(118) @ 555: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write adress channel is 28
+# UVM_INFO axi_m_driver.sv(177) @ 585: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write data channel
+# UVM_INFO axi_m_driver.sv(185) @ 585: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  0
+# UVM_INFO axi_m_monitor.sv(109) @ 585: uvm_test_top.env.agent.mon [] ----------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(110) @ 585: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Write captured: Addr = 28, Data = abf5
+# UVM_INFO axi_m_driver.sv(185) @ 595: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] waiting for wready : 0  to_ctr :  1
+# UVM_INFO axi_m_driver.sv(194) @ 605: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] data sent from master is : abf5
+# UVM_INFO axi_m_driver.sv(206) @ 615: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master write response channel 
+# UVM_INFO axi_m_driver.sv(58) @ 635: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 635: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(149) @ 645: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] In master read adress channel
+# UVM_INFO axi_m_monitor.sv(129) @ 675: uvm_test_top.env.agent.mon [] -------------------------------------------------------------------------------------------
+# UVM_INFO axi_m_monitor.sv(130) @ 675: uvm_test_top.env.agent.mon [uvm_test_top.env.agent.mon] Read captured: Addr = 28, Data = abf5 (Match)
+# UVM_INFO axi_m_driver.sv(58) @ 685: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] exiting master driver run phase forever loop
+# UVM_INFO axi_m_driver.sv(54) @ 685: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] entering master driver run phase forever loop
+# exited loop
+# ** Note: $finish    : top_axi_m.sv(62)
+#    Time: 1030 ns  Iteration: 0  Instance: /top
+# End time: 09:54:52 on Feb 04,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+End time: 09:54:52 on Feb 04,2025, Elapsed time: 0:00:13
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   0
